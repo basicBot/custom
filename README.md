@@ -1,5 +1,6 @@
 basicBot-customization
 ======================
+Click [here](https://github.com/Yemasthui/basicBot) for basicBot's main repository.
 
 Using custom room settings or adding functionality is done by loading your own script loading and modifying the bot.
 This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/Yemasthui/basicBot-customization/blob/master/extension.js). 
