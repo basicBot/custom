@@ -10,6 +10,9 @@
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
+        //Load custom settings set below
+        bot.retrieveSettings();
+
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
@@ -40,62 +43,62 @@
                     API.sendChat("/me Bacon!!!");
                 }
             }
-        }
-
-        //Change the bots default settings
-
-        bot.settings = {
-            botName: "basicBot",
-            language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-            maximumAfk: 120,
-            afkRemoval: true,
-            maximumDc: 60,
-            bouncerPlus: true,
-            lockdownEnabled: false,
-            lockGuard: false,
-            maximumLocktime: 10,
-            cycleGuard: true,
-            maximumCycletime: 10,
-            timeGuard: true,
-            maximumSongLength: 10,
-            autodisable: true,
-            commandCooldown: 30,
-            usercommandsEnabled: true,
-            lockskipPosition: 3,
-            lockskipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
-                ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
-                ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
-            ],
-            afkpositionCheck: 15,
-            afkRankCheck: "ambassador",
-            motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
-            filterChat: true,
-            etaRestriction: false,
-            welcome: true,
-            opLink: null,
-            rulesLink: null,
-            themeLink: null,
-            fbLink: null,
-            youtubeLink: null,
-            website: null,
-            intervalMessages: [],
-            messageInterval: 5,
-            songstats: true,
-            commandLiteral: "!"
         };
 
-        //after settings have been set, load the chat package again to account for any changes
+        //Load the chat package again to account for any changes
         bot.loadChat();
 
     }
+
+    //Change the bots default settings and make sure they are loaded on launch
+
+    localStorage.setItem("basicBotsettings", JSON.stringify({
+        botName: "basicBot",
+        language: "english",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        maximumAfk: 120,
+        afkRemoval: true,
+        maximumDc: 60,
+        bouncerPlus: true,
+        lockdownEnabled: false,
+        lockGuard: false,
+        maximumLocktime: 10,
+        cycleGuard: true,
+        maximumCycletime: 10,
+        timeGuard: true,
+        maximumSongLength: 10,
+        autodisable: true,
+        commandCooldown: 30,
+        usercommandsEnabled: true,
+        lockskipPosition: 3,
+        lockskipReasons: [
+            ["theme", "This song does not fit the room theme. "],
+            ["op", "This song is on the OP list. "],
+            ["history", "This song is in the history. "],
+            ["mix", "You played a mix, which is against the rules. "],
+            ["sound", "The song you played had bad sound quality or no sound. "],
+            ["nsfw", "The song you contained was NSFW (image or sound). "],
+            ["unavailable", "The song you played was not available for some users. "]
+        ],
+        afkpositionCheck: 15,
+        afkRankCheck: "ambassador",
+        motdEnabled: false,
+        motdInterval: 5,
+        motd: "Temporary Message of the Day",
+        filterChat: true,
+        etaRestriction: false,
+        welcome: true,
+        opLink: null,
+        rulesLink: null,
+        themeLink: null,
+        fbLink: null,
+        youtubeLink: null,
+        website: null,
+        intervalMessages: [],
+        messageInterval: 5,
+        songstats: true,
+        commandLiteral: "!"
+    }));
 
     //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
