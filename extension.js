@@ -9,19 +9,6 @@
 
         bot.retrieveSettings();
 
-        bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Bacon!!!");
-                }
-            }
-        };
-        
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'deu-lhe um biscoito de aveia caseiro macio!',
                     'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
@@ -76,11 +63,11 @@
             ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 8,
         motd: "!roulette",
         filterChat: true,
-        etaRestriction: false,
+        etaRestriction: true,
         welcome: false,
         opLink: null,
         rulesLink: null,
