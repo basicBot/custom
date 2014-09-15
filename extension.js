@@ -40,7 +40,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me Bacon is the best meat!!!");
                 }
             }
         };
@@ -53,7 +53,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "ChatBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
@@ -84,7 +84,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: ":sunny: Welcome to the Chillout Music! :sunny: Sit back & Relax :herb::fire::dash: + :beer: Introduce everyone to some of your favorite chillout songs. :zap: For more info, visit our website :point_right: http://www.chilloutmusic.org :point_left:",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
