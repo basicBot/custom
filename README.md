@@ -14,6 +14,11 @@ A detailed overview of the possible settings can be found [here](https://github.
 
 (A custom .json file can still be used for custom file settings, but is discouraged as the method provided here allows for more customization.)
 
+###Blacklists###
+
+Blacklists can be added in the settings through either links to raw json files with the same format as those in the examples provided (forking and using [rawgit's development link](https://rawgit.com/) is a great way to do this),
+or replacing the link with a custom function that loads your lists into the bot (this option requires extensive knowledge of javascript and a good understanding of the bot's inner workings).
+
 Copyright
 ---------
 Copyright &copy; 2014 Yemasthui

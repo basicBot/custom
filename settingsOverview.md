@@ -54,3 +54,5 @@ Booleans are either 'true' or 'false', without the '.
 	`["message 1", "message 2", "message 3"]`
 - "messageInterval": the interval X for the standard messages, type: a number
 - "songstats": toggle message with statistics for the previous song, type: boolean
+- "commandLiteral": symbol used to start commands, type: string
+- "blacklists": list of blacklists and a link to their sources or a function to set them into the bot, see the readme for a more detailed how-to, type: string or function
