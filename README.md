@@ -19,7 +19,7 @@ A detailed overview of the possible settings can be found [here](https://github.
 Blacklists can be added in the settings through either links to raw json files with the same format as those in the examples provided (forking and using [rawgit's development link](https://rawgit.com/) is a great way to do this),
 or replacing the link with a custom function that loads your lists into the bot (this option requires extensive knowledge of javascript and a good understanding of the bot's inner workings).
 
-To update your lists manually, you can either of these:
+To update your lists manually, you can use the details specified in chat messages after a song is blacklisted, or use either of these in the console periodically:
 ```javascript
 bot.getNewBlacklistedSongs(); //get a javascript object
 bot.logNewBlacklistedSongs(); //get a list
