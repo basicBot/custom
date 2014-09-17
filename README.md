@@ -20,8 +20,10 @@ Blacklists can be added in the settings through either links to raw json files w
 or replacing the link with a custom function that loads your lists into the bot (this option requires extensive knowledge of javascript and a good understanding of the bot's inner workings).
 
 To update your lists manually, you can either of these:
-```bot.getNewBlacklistedSongs(); //get a javascript object
-bot.logNewBlacklistedSongs(); //get a list```
+```javascript
+bot.getNewBlacklistedSongs(); //get a javascript object
+bot.logNewBlacklistedSongs(); //get a list
+```
 
 
 Copyright
