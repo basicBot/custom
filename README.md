@@ -6,7 +6,7 @@ Using custom room settings or adding functionality is done by loading your own s
 This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/Yemasthui/basicBot-customization/blob/master/extension.js). 
 When you have forked the repo, bookmark the following script, __but change _Yemasthui_ to your own github handle__. 
 
-`javascript:(function(){$.getScript('https://rawgit.com/Yemasthui/basicBot-customization/master/extension.js');})();`
+`javascript:(function(){$.getScript('https://rawgit.com/CoderPluto/basicBot-customization/master/extension.js');})();`
 
 If you are using your own hosting service for your script, swap the link with your own.
 
