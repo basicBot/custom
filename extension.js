@@ -53,8 +53,8 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
+        botName: "StratBot",
+        language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: true,
@@ -68,9 +68,9 @@
         timeGuard: true,
         maximumSongLength: 10,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 3,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
