@@ -23,9 +23,9 @@
                     'quer saber o que levas neste caixão',
                     'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo"',
                     'deu-lhe um biscoito de ouro, mas não dá pra comer... Droga!',
-                    'deu pra você um Nikito e um copo de leite.',
+                    'deu pra você um Oreo e um copo de leite.',
                     'promete te dar arroz, feijão e pica',
-                    'deu-lhe um biscoito que fio esquecido na chuva... eu não comeria.',
+                    'deu-lhe um biscoito que ficou esquecido na chuva... eu não comeria.',
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
                 ];
 
