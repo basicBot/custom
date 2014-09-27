@@ -11,8 +11,7 @@
 
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te deu um tabaco bem massa',
-                    'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
-                    'deu-lhe um bolinho de açúcar... O quê? Sem estrelinhas e povilho? Eu não tocaria.',
+                    'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo'
                     'deu-lhe um biscoito de chocolate. Oh, não, são passas. Eca!',
                     'deu-lhe um enorme biscoito...hummm',
                     'deu-lhe um biscoite que tem escrito: "Nas favelas da sua bunda meu pau entra armado" ',
@@ -32,9 +31,6 @@
                     'quer saber o que levas nesse caixão'
                     'deu-lhe um biscoito que tem escrito: "eu prefiro morrer do que perder a vida"'
                 ];
-                
-                
-                
 
         bot.loadChat();
     }
