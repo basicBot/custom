@@ -10,24 +10,31 @@
         bot.retrieveSettings();
 
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
-                    'deu-lhe um biscoito de aveia caseiro macio!',
+                    'te deu um tabaco bem massa',
                     'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
                     'deu-lhe um bolinho de açúcar... O quê? Sem estrelinhas e povilho? Eu não tocaria.',
                     'deu-lhe um biscoito de chocolate. Oh, não, são passas. Eca!',
-                    'deu-lhe um enorme biscoito. Quando o toca, ele se duplica num outro biscoito... estranho',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Por que você não está trabalhando?"',
+                    'deu-lhe um enorme biscoito...hummm',
+                    'deu-lhe um biscoite que tem escrito: "Nas favelas da sua bunda meu pau entra armado" ',
                     'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Arrisque-se!"',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Saia desse computador!"',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Não esqueça de comer os vegetais"',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Se você mecher o quadril, vão te achar sexy!',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo"',
-                    'deu-lhe um biscoito de ouro, mas não dá pra comer... Droga!',
-                    'deu-lhe um Oreo e um copo de leite.',
-                    'deu-lhe um biscoito de arco-íris feito com amor :heart:',
-                    'deu-lhe um biscoito que fio esquecido na chuva... eu não comeria.',
+                    'Te deu uma conta premium no redtube seu punheteiro!"',
+                    'Te deu um biscoito da sorte,que tem escrito: "Saia desse computador!"',
+                    'Deu pra você um biscoito que tem escrito: vai estender a roupa ou sua mãe vai te matar!',
+                    'Quer te fuder até o talo!',
+                    'te deu um biscoito da sorte, tem escrito: "Eu te amo"',
+                    'te deu um biscoito de ouro, mas não dá pra comer... Droga!',
+                    'deu pra você um Nikito e um copo de leite.',
+                    'te deu um pote de whey pra ficar MONSTRÃO!',
+                    'deu-lhe um biscoito que ficou esquecido na chuva...eca,eu não comeria.',
+                    'deu-lhe um biscoito da sorte,que tem escrito: "Tem um oco no seu cú!"
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
+                    'promete te dar arroz, feijão e pica'
+                    'quer saber o que levas nesse caixão'
+                    'deu-lhe um biscoito que tem escrito: "eu prefiro morrer do que perder a vida"'
                 ];
+                
+                
+                
 
         bot.loadChat();
     }
@@ -51,7 +58,7 @@
         autodisable: true,
         commandCooldown: 3,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
                 ["tema", "A música não se encaixa nos padrões da sala. "],
                 ["op", "Essa música está na lista OP. "],
