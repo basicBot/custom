@@ -11,23 +11,22 @@
 
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te deu um tabaco bem massa',
-                    'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo'
+                    'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
+                    'deu-lhe um biscoito da sorte,que tem escrito: "Tem um oco no seu cú!',
                     'deu-lhe um biscoito de chocolate. Oh, não, são passas. Eca!',
-                    'deu-lhe um enorme biscoito...hummm',
-                    'deu-lhe um biscoite que tem escrito: "Nas favelas da sua bunda meu pau entra armado" ',
+                    'deu-lhe um biscoito enorme...hummm',
+                    'deu-lhe um biscoite que tem escrito: "Nas favelas da sua bunda meu pau entra armado',
                     'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
-                    'Te deu uma conta premium no redtube seu punheteiro!"',
-                    'Te deu um biscoito da sorte,que tem escrito: "Saia desse computador!"',
+                    'Te deu uma conta premium no redtube seu punheteiro!',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Saia desse computador!"',
                     'Quer te fuder até o talo!',
-                    'te deu um biscoito da sorte, tem escrito: "Eu te amo"',
-                    'te deu um biscoito de ouro, mas não dá pra comer... Droga!',
+                    'quer saber o que levas neste caixão',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo"',
+                    'deu-lhe um biscoito de ouro, mas não dá pra comer... Droga!',
                     'deu pra você um Nikito e um copo de leite.',
-                    'te deu um pote de whey pra ficar MONSTRÃO!',
-                    'deu-lhe um biscoito que ficou esquecido na chuva...eca,eu não comeria.',
-                    'deu-lhe um biscoito da sorte,que tem escrito: "Tem um oco no seu cú!"
+                    'promete te dar arroz, feijão e pica',
+                    'deu-lhe um biscoito que fio esquecido na chuva... eu não comeria.',
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
-                    'promete te dar arroz, feijão e pica'
-                    'quer saber o que levas nesse caixão'
                 ];
 
         bot.loadChat();
