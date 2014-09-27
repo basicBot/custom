@@ -1,36 +1,13 @@
 (function () {
 
-    //Define our function responsible for extending the bot.
     function extend() {
-        //If the bot hasn't been loaded properly, try again in 1 second(s).
-        if (!window.bot) {
+            if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
 
-        //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
-        //Load custom settings set below
         bot.retrieveSettings();
-
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
-
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
 
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'deu-lhe um biscoito de aveia caseiro macio!',
@@ -52,18 +29,15 @@
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
                 ];
 
-        //Load the chat package again to account for any changes
         bot.loadChat();
-
     }
 
-    //Change the bots default settings and make sure they are loaded on launch
-
+    
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "StratBot",
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
-        maximumAfk: 120,
+        maximumAfk: 60,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -77,37 +51,36 @@
         autodisable: true,
         commandCooldown: 3,
         usercommandsEnabled: true,
-        lockskipPosition: 1,
+        lockskipPosition: 3,
         lockskipReasons: [
-            ["tema", "A música não se encaixa nos padrões da sala. "],
+                ["tema", "A música não se encaixa nos padrões da sala. "],
                 ["op", "Essa música está na lista OP. "],
                 ["historico", "A música ainda está no histórico. "],
                 ["mix", "Você tocou um mix (muito longo) - não permitido. "],
                 ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
                 ["nsfw", "A música que você tocou é NSFW (impróprio). "],
                 ["indisponivel", "A música que você tocou está indisponível. "]
-        ],
+            ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 8,
+        motd: "!roulette",
         filterChat: true,
-        etaRestriction: false,
-        welcome: true,
+        etaRestriction: true,
+        welcome: false,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl,
+        fbLink: "https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl",
         youtubeLink: null,
-        website:https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl,
+        website: "https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl",
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
-        commandLiteral: "!",
-       
+        songstats: false,
+        commandLiteral: "!"
+    }));
 
-    //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
 
 }).call(this);
