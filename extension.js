@@ -18,7 +18,6 @@
                     'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
                     'Te deu uma conta premium no redtube seu punheteiro!"',
                     'Te deu um biscoito da sorte,que tem escrito: "Saia desse computador!"',
-                    'Deu pra você um biscoito que tem escrito: vai estender a roupa ou sua mãe vai te matar!',
                     'Quer te fuder até o talo!',
                     'te deu um biscoito da sorte, tem escrito: "Eu te amo"',
                     'te deu um biscoito de ouro, mas não dá pra comer... Droga!',
@@ -29,7 +28,6 @@
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
                     'promete te dar arroz, feijão e pica'
                     'quer saber o que levas nesse caixão'
-                    'deu-lhe um biscoito que tem escrito: "eu prefiro morrer do que perder a vida"'
                 ];
 
         bot.loadChat();
