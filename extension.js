@@ -15,7 +15,7 @@
                     'deu-lhe um biscoito da sorte,que tem escrito: "Tem um oco no seu cú!',
                     'deu-lhe um biscoito de chocolate. Oh, não, são passas. Eca!',
                     'deu-lhe um biscoito enorme...hummm',
-                    'deu-lhe um biscoite que tem escrito: "Nas favelas da sua bunda meu pau entra armado',
+                    'deu-lhe um biscoito que tem escrito: "Nas favelas da sua bunda meu pau entra armado',
                     'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
                     'Te deu uma conta premium no redtube seu punheteiro!',
                     'deu-lhe um biscoito da sorte, tem escrito: "Saia desse computador!"',
