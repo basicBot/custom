@@ -9,6 +9,21 @@
 
         bot.retrieveSettings();
 
+        bot.commands.AfkCommand = {
+            command: 'afk',  //The command to be called. With the standard command literal this would be: !afk
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(" Esta AFK e Será Removido Da Lista ");
+                }
+            }
+        };
+        
+        bot.loadChat();
+    }
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te deu um tabaco bem massa',
                     'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
@@ -72,9 +87,9 @@
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: "https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl",
+        fbLink: "https://www.facebook.com/skrillex1000gr4u",
         youtubeLink: null,
-        website: "https://www.facebook.com/pages/Strat-Cast/266705590181894?ref=hl",
+        website: "https://www.facebook.com/skrillex1000gr4u",
         intervalMessages: [],
         messageInterval: 5,
         songstats: false,
