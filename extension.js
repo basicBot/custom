@@ -9,17 +9,6 @@
 
         bot.retrieveSettings();
 
-        bot.commands.AfkCommand = {
-            command: 'afk', 
-            rank: 'user', 
-            type: 'exact', 
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat(" Esta AFK e Será Removido Da Lista ");
-                ];
-        
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te deu um tabaco bem massa',
                     'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
@@ -37,8 +26,10 @@
                     'deu pra você um Oreo e um copo de leite.',
                     'promete te dar arroz, feijão e pica',
                     'deu-lhe um biscoito que ficou esquecido na chuva... eu não comeria.',
-                    'te trouxe biscoitos fresquinhos... parecem deliciosos!'
+                    'te trouxe biscoitos fresquinhos... parecem deliciosos!',                
+                    'te deu um ban eterno de 30 dias',
                 ];
+                
 
         bot.loadChat();
     }
