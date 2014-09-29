@@ -10,20 +10,16 @@
         bot.retrieveSettings();
 
         bot.commands.AfkCommand = {
-            command: 'afk',  //The command to be called. With the standard command literal this would be: !afk
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            command: 'afk', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat(" Esta AFK e Será Removido Da Lista ");
-                }
-            }
-        };
+                ];
         
-        bot.loadChat();
-    }
         bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
                     'te deu um tabaco bem massa',
                     'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
