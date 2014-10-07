@@ -28,7 +28,19 @@
                     'deu-lhe um biscoito que ficou esquecido na chuva... eu não comeria.',
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!',                
                     'te deu um ban eterno de 30 dias',
-                ];
+        
+        bot.commands.afkCommand = {
+        command: 'afk',  
+        rank: 'user', 
+        type: 'exact', 
+        functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+                API.sendChat("[] [! Afk] AFK mensagem definido! Da próxima vez que você Falar,! Afk será desativado.");
+                }
+            }
+                }];
                 
 
         bot.loadChat();
