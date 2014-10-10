@@ -29,10 +29,6 @@
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!',                
                     'te deu um ban eterno de 30 dias',
         
-        bot.commands.cookieCommand.cookies =['Te deu uma bota estilosa pra fazer inveja :boot:',
-        'Te deu um sapato pra você tacar no presidente :shoe:
-        'Deu um salto pra voce quebrar e cair :high_heel:',
-        
         bot.commands.techCommand = {
         command: 'tech',  
         rank: 'user', 
