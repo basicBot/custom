@@ -29,15 +29,19 @@
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!',                
                     'te deu um ban eterno de 30 dias',
         
-        bot.commands.afkCommand = {
-        command: 'afk',  
+        bot.commands.cookieCommand.cookies =['Te deu uma bota estilosa pra fazer inveja :boot:',
+        'Te deu um sapato pra você tacar no presidente :shoe:
+        'Deu um salto pra você quebrar e cair :high_heel:',
+        
+        bot.commands.techCommand = {
+        command: 'tech',  
         rank: 'user', 
         type: 'exact', 
         functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-                API.sendChat("[] [! Afk] AFK mensagem definido! Da próxima vez que você Falar,! Afk será desativado.");
+                API.sendChat("Tech Blog com mais regularidade para informá-lo quais erros os desenvolvedores estão trabalhando. http://tech.plug.dj/ ");
                 }
             }
                 }];
