@@ -41,7 +41,6 @@
                 }
             }
                 }];
-                
 
         bot.loadChat();
     }
@@ -61,7 +60,7 @@
         cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 6:30,
+        maximumSongLength: 7,
         autodisable: true,
         commandCooldown: 3,
         usercommandsEnabled: true,
