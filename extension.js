@@ -1,60 +1,37 @@
 (function () {
 
-    //Define our function responsible for extending the bot.
     function extend() {
-        //If the bot hasn't been loaded properly, try again in 1 second(s).
-        if (!window.bot) {
+            if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
 
-        //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
-        //Load custom settings set below
         bot.retrieveSettings();
 
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
+        bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
+                    'Quer te fuder até o talo!',
+                    'deu-lhe um biscoito que está escrito "você é um viado"',
+                    'deu-lhe um enorme biscoito que está escrito "quer casar comigo? :ring:',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Vou te dar um ban eterno de 30 dias"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Saia desse computador agora!"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Não esqueça de comer os vegetais"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Se você mecher o quadril, vão te achar sexy!',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo *-*"',
+                    'deu-lhe um Oreo e um copo de leite.',
+                    'deu-lhe um biscoito de arco-íris feito com amor :heart:',
+                    'deu-lhe um biscoito que fio esquecido na chuva... eu não comeria.',
+                    'te trouxe biscoitos fresquinhos... parecem deliciosos! :3'
+                ];
 
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
-
-        bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Bacon!!!");
-                }
-            }
-        };
-
-        //Load the chat package again to account for any changes
         bot.loadChat();
-
     }
 
-    //Change the bots default settings and make sure they are loaded on launch
-
+    
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "EBbot",
-        language: "english",
+        language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
         afkRemoval: false,
@@ -84,7 +61,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Mensagem temporário do dia",
         filterChat: false,
         etaRestriction: false,
         welcome: true,
