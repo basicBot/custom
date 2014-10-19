@@ -79,6 +79,7 @@
         motdEnabled: null,
         motdInterval: 8,
         motd: "!roulette",
+        afk: true,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
