@@ -40,6 +40,8 @@
                 API.sendChat("Tech Blog com mais regularidade para informá-lo em quais erros os desenvolvedores estão trabalhando. http://tech.plug.dj/ ");
                 }
             }
+             
+        
                 }];
 
         bot.loadChat();
