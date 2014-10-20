@@ -53,7 +53,7 @@
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 60,
-        afkRemoval: null,
+        afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
