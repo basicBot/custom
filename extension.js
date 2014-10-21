@@ -9,26 +9,34 @@
 
         bot.retrieveSettings();
 
-        bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
-                    'te deu um tabaco bem massa',
-                    'deu-lhe um biscoito podre e sujo. Era o último do pacote. Que nojo!',
-                    'deu-lhe um biscoito da sorte,que tem escrito: "Tem um oco no seu cú!',
-                    'deu-lhe um biscoito de chocolate. Oh, não, são passas. Eca!',
-                    'deu-lhe um biscoito enorme...hummm',
-                    'deu-lhe um biscoito que tem escrito: "Nas favelas da sua bunda meu pau entra armado"',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Cumprimente agora a pessoa que você ama"',
-                    'Te deu uma conta premium no redtube seu punheteiro!',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Saia desse computador!"',
-                    'Quer te fuder até o talo!',
-                    'quer saber o que levas neste caixão',
-                    'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo"',
-                    'deu-lhe um biscoito de ouro, mas não dá pra comer... Droga!',
-                    'deu pra você um Oreo e um copo de leite.',
-                    'promete te dar arroz, feijão e pica',
-                    'deu-lhe um biscoito que ficou esquecido na chuva... eu não comeria.',
-                    'te trouxe biscoitos fresquinhos... parecem deliciosos!',                
-                    'te deu um ban eterno de 30 dias',
-
+        bot.commands.friendCommand = {
+        command: 'friend',
+        rank: 'user',
+        type: 'exact',
+        functionality: function (chat, cmd) {
+             if (this.type === 'exact' && chat.message.lenght !== cmd.lenght) return void (0);
+             if (!bot.commands.executable(this.rank, chat)) return void (0);
+             else {
+                 API.sendchat("Novo Sistema De Amigos http://blog.plug.dj/2014/10/friends-feature/?utm_content=buffercf974&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer");
+                 
+                }
+            }
+        };
+        
+        bot.commands.twitchCommand = {
+        command: 'twitch',
+        rank: 'user',
+        type: 'exact',
+        functionality: function (chat, cmd) {
+             if (this.type === 'exact' && chat.message.lenght !== cmd.lenght) return void (0);
+             if (!bot.commands.executable(this.rank, chat)) return void (0);
+             else {
+                 API.sendchat("Possível integração Twitch com Plug.Dj http://support.plug.dj/hc/communities/public/questions/200905295-Twitch-integration");
+                 
+             }
+        }
+    };
+    
         bot.commands.techCommand = {
         command: 'tech',  
         rank: 'user', 
@@ -42,7 +50,7 @@
             }
              
         
-                }];
+                };
 
         bot.loadChat();
     }
@@ -53,7 +61,7 @@
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 60,
-        afkRemoval: true,
+        afkRemoval: null,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
