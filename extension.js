@@ -83,18 +83,18 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdInterval: 15,
+        motd: "Temporary Message of the Day. test",
         filterChat: true,
         etaRestriction: false,
-        welcome: true,
-        opLink: null,
-        rulesLink: null,
-        themeLink: null,
-        fbLink: null,
-        youtubeLink: null,
-        website: null,
-        intervalMessages: [],
+        welcome: false,
+        opLink: null, //todo
+        rulesLink: null, //todo
+        themeLink: null, //todo
+        fbLink: null, //todo
+        youtubeLink: null, //todo
+        website: null, //todo
+        intervalMessages: [], 
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
@@ -105,6 +105,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/natzki/basicBot/master/basicBot.js', extend);
 
 }).call(this);
