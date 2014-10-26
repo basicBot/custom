@@ -1,63 +1,67 @@
 (function () {
 
-    //Define our function responsible for extending the bot.
     function extend() {
-        //If the bot hasn't been loaded properly, try again in 1 second(s).
-        if (!window.bot) {
+            if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
 
-        //Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
-        //Load custom settings set below
         bot.retrieveSettings();
 
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
-
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
-
-        bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Bacon!!!");
+        bot.commands.friendCommand = {
+        command: 'friend',
+        rank: 'user',
+        type: 'exact',
+        functionality: function (chat, cmd) {
+             if (this.type === 'exact' && chat.message.lenght !== cmd.lenght) return void (0);
+             if (!bot.commands.executable(this.rank, chat)) return void (0);
+             else {
+                 API.sendchat("Novo Sistema De Amigos http://blog.plug.dj/2014/10/friends-feature/?utm_content=buffercf974&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer");
+                 
                 }
             }
         };
+        
+        bot.commands.twitchCommand = {
+        command: 'twitch',
+        rank: 'user',
+        type: 'exact',
+        functionality: function (chat, cmd) {
+             if (this.type === 'exact' && chat.message.lenght !== cmd.lenght) return void (0);
+             if (!bot.commands.executable(this.rank, chat)) return void (0);
+             else {
+                 API.sendchat("Possível integração Twitch com Plug.Dj http://support.plug.dj/hc/communities/public/questions/200905295-Twitch-integration");
+                 
+             }
+        }
+    };
+    
+        bot.commands.techCommand = {
+        command: 'tech',  
+        rank: 'user', 
+        type: 'exact', 
+        functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+                API.sendChat("Tech Blog com mais regularidade para informá-lo em quais erros os desenvolvedores estão trabalhando. http://tech.plug.dj/ ");
+                }
+            }
+             
+        
+                };
 
-        //Load the chat package again to account for any changes
         bot.loadChat();
-
     }
 
-    //Change the bots default settings and make sure they are loaded on launch
-
+    
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
-        afkRemoval: true,
+        botName: "TdrBot",
+        language: "portuguese",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
+        maximumAfk: 60,
+        afkRemoval: null,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
@@ -66,45 +70,40 @@
         cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 3,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
-        ],
+                ["tema", "A música não se encaixa nos padrões da sala. "],
+                ["op", "Essa música está na lista OP. "],
+                ["historico", "A música ainda está no histórico. "],
+                ["mix", "Você tocou um mix (muito longo) - não permitido. "],
+                ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
+                ["nsfw", "A música que você tocou é NSFW (impróprio). "],
+                ["indisponivel", "A música que você tocou está indisponível. "]
+            ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: null,
+        motdInterval: 8,
+        motd: "!roulette",
         filterChat: true,
-        etaRestriction: false,
-        welcome: true,
+        etaRestriction: true,
+        welcome: false,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://www.facebook.com/skrillex1000gr4u",
         youtubeLink: null,
-        website: null,
+        website: "https://www.facebook.com/skrillex1000gr4u",
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
-        commandLiteral: "!",
-        blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
-        }
+        songstats: false,
+        commandLiteral: "!"
     }));
 
-    //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
 
 }).call(this);
