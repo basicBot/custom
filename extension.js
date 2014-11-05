@@ -28,7 +28,7 @@
                     'deu-lhe um biscoito que fio esquecido na chuva... eu não comeria.',
                     'te trouxe biscoitos fresquinhos... parecem deliciosos!'
                 ];
-                bot.commands.cookieCommand = {
+            bot.commands.cookieCommand = {
             command: 'cookie',
             rank: 'ambassador',
             type: 'exact',
@@ -40,6 +40,21 @@
                 }
             }
         };
+        
+        bot.commands.pingCommand = {
+            command: 'ping',
+            rank: 'ambassador',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    
+                }
+            }
+        };
+        
+        
         bot.loadChat();
     }
 
