@@ -53,7 +53,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "multiBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
@@ -89,11 +89,11 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
+        rulesLink: http://multimod.lt/forum/t592-plug-dj,
         themeLink: null,
-        fbLink: null,
+        fbLink: http://facebook.com/multimod,
         youtubeLink: null,
-        website: null,
+        website: http://multimod.lt,
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
