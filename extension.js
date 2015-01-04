@@ -30,7 +30,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Recomendamos que use o OrigemWoot, veja um tutorial de como usa-lo. http://electromilgrau.jimdo.com/autowoot :+1:");
+                    API.sendChat("/me Recomendamos que use o OrigemWoot, veja um tutorial de como usa-lo. http://origemwoot.weebly.com/ :+1:");
                 }
             }
         };
