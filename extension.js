@@ -55,7 +55,7 @@
 
     
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "EMGbot",
+        botName: "EBbot",
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
@@ -95,7 +95,7 @@
         themeLink: null,
         fbLink: "https://facebook.com/groups/1497216277163895/",
         youtubeLink: null,
-        website: "https://electromilgrau.jimdo.com",
+        website: "",
         intervalMessages: [],
         messageInterval: 5,
         songstats: false,
@@ -103,6 +103,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.jsAPAGAR AQUI PRA FUNFAR', extend);
+    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
 
 }).call(this);
