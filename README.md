@@ -1,4 +1,4 @@
-basicBot-customization
+SwingBot, a plug.dj bot based on Yemasthui's basicBot, customized for Boomswing Cabaret
 ======================
 Click [here](https://github.com/Yemasthui/basicBot) for basicBot's main repository.
 
