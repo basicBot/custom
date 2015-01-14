@@ -65,6 +65,7 @@
                             }
                             API.sendChat("/me gives " + user.id + " a Glennfiddich 12 year, neat, of course");
                         } else API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
+					}
                 }
             }
         };
