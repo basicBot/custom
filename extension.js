@@ -52,8 +52,19 @@
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
+				
                 else {
-                    API.sendChat("/me gives audiomoddified a Glennfiddich 12 year, he deserves it");
+					var msg = chat.message;
+                    if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
+                    var name = msg.substr(cmd.length + 2);
+                    var user = basicBot.userUtilities.lookupUserName(name);
+                    if (msg.length > cmd.length + 2) {
+                        if (typeof user !== 'undefined') {
+                            if (basicBot.room.roomevent) {
+                                basicBot.room.eventArtists.push(user.id);
+                            }
+                            API.sendChat("/me gives " + user.id + " a Glennfiddich 12 year, neat, of course");
+                        } else API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
                 }
             }
         };
