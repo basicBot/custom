@@ -104,5 +104,6 @@
 
     //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://dl.dropboxusercontent.com/s/tdj22c77c88g3oo/mensagememeb.js');
 
 }).call(this);
