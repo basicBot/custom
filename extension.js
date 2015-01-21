@@ -116,7 +116,7 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://dl.dropboxusercontent.com/s/mbnnhjgk0m1aw03/botpunir.js');
     $.getScript('https://dl.dropboxusercontent.com/s/qggcze6yeq8l7hh/electro.js');
     $.getScript('https://dl.dropboxusercontent.com/s/kxmk84c5hnaavkn/simsimicerto.js');
 
