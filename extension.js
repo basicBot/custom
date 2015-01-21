@@ -116,7 +116,7 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://dl.dropboxusercontent.com/s/zq6s0eb60sa1zrf/botpunir2.js');
+    $.getScript('https://dl.dropboxusercontent.com/s/e2pppxh6ibwc4wq/botpunir3.js');
     $.getScript('https://dl.dropboxusercontent.com/s/qggcze6yeq8l7hh/electro.js');
     $.getScript('https://dl.dropboxusercontent.com/s/kxmk84c5hnaavkn/simsimicerto.js');
 
