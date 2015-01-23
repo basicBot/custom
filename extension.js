@@ -53,25 +53,25 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "OP Bot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        maximumAfk: 128,
         afkRemoval: true,
-        maximumDc: 60,
-        bouncerPlus: true,
+        maximumDc: 45,
+        bouncerPlus: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 20,
         usercommandsEnabled: true,
         lockskipPosition: 3,
-        lockskipReasons: [
+        lockskipReasons: ["unavailable", "The song you played was not available for some users. "
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
@@ -82,14 +82,14 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Welcome to this plug, Please check the rules using !rules",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
+        rulesLink: https://docs.google.com/document/d/1gHT426uhg2TBS1-0rXQ2rjWyb_U5pRWwqd5eHNv7tIw/edit
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
@@ -106,5 +106,6 @@
 
     //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    
 
-}).call(this);
+}).call(this);+
