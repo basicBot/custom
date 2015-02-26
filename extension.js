@@ -95,7 +95,7 @@
         welcome: true,
         opLink: null,
         rulesLink: null,
-        themeLink: null,
+        themeLink: http://i.imgur.com/u36VR4n.png,
         fbLink: null,
         youtubeLink: null,
         website: null,
