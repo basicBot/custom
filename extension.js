@@ -68,7 +68,7 @@
 
     
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "EBbot",
+        botName: "chatbot",
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
@@ -106,7 +106,7 @@
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: "https://facebook.com/groups/1497216277163895/",
+        fbLink: "null",
         youtubeLink: null,
         website: "",
         intervalMessages: [],
@@ -117,7 +117,6 @@
 
     //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
-    $.getScript('https://dl.dropboxusercontent.com/s/qggcze6yeq8l7hh/electro.js');
     $.getScript('https://dl.dropboxusercontent.com/s/kxmk84c5hnaavkn/simsimicerto.js');
 
 }).call(this);
