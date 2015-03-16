@@ -56,9 +56,6 @@
         botName: "Padėjėjas Bobas",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 50, // 1-200
-        startupVolume: 13, // 0-100
-        startupEmoji: true, // true or false
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 60,
