@@ -56,11 +56,9 @@
         botName: "basicBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
@@ -71,11 +69,11 @@
         voteSkip: false,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
-        autodisable: true,
+        maximumSongLength: 8,
+        autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
@@ -96,12 +94,12 @@
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://www.facebook.com/groups/712477472146827/",
         youtubeLink: null,
         website: null,
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
