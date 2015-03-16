@@ -55,6 +55,9 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Padėjėjas Bobas",
         language: "english",
+        startupCap: 50, // 1-200
+        startupVolume: 13, // 0-100
+        startupEmoji: true, // true or false
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: false,
