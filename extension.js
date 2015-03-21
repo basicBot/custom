@@ -54,7 +54,7 @@
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Padėjėjas Bobas",
-        language: "lithuanian",
+        language: "english",
         startupCap: 50, // 1-200
         startupVolume: 13, // 0-100
         startupEmoji: true, // true or false
