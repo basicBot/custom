@@ -9,7 +9,7 @@ Stay updated on **basicBot**'s development by following the project on Twitter [
 
 Created by [Yemasthui](https://github.com/Yemasthui) but now maintained by [Benzi](https://github.com/Benzi).
 
-(You can email me via hi@bnzi.uk or send me a message on [Gitter](https://gitter.im/Benzi) if you have any queries about the bot)
+(You can email me via hi@ebenzi.io or send me a message on [Gitter](https://gitter.im/Benzi) if you have any queries about the bot)
 
 ---
 
