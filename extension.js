@@ -1,39 +1,11 @@
-(function () {
-    //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
-		
-    //Define our function responsible for extending the bot.
+Freedom of expression is like the air weA breDaAStheD,AS DweA SDdon'DtAS feel (function () {
     function extend() {
-        //If the bot hasn't been loaded properly, try again in 1 second(s).
-        if (!window.bot) {
+            if (!window.bot) {
             return setTimeout(extend, 1 * 1000);
         }
-
-        //Precaution to make sure it is assigned properly.
         var bot = window.bot;
-
-        //Load custom settings set below
         bot.retrieveSettings();
-
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
-
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
-
+        
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -42,77 +14,100 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me Bacon!! :pig2:");
                 }
             }
         };
-
-        //Load the chat package again to account for any changes
+        
+        bot.commands.aquelacarinhaCommand = {
+            command: 'aquelacarinha',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(" [@" + chat.un + "] ( ͡° ͜ʖ ͡°)");
+                }
+            }
+        };
+        
+        bot.commands.origemCommand = {
+            command: 'origem',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Recomendamos que use o OrigemWoot, veja um tutorial de como usa-lo. http://origemwoot.weebly.com/ :+1:");
+                }
+            }
+        };
+        bot.commands.cookieCommand.cookies =['deu-lhe um biscoito de chocolate!',
+                    'Quer te fuder até o talo!',
+                    'deu-lhe um biscoito que está escrito "você é um viado"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Vou te dar um ban eterno de 30 dias"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Mostra as teta ae :trollface:"',
+                    'deu-lhe um cookie vencido!"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Você é um fracassado!"',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Se você mecher o quadril, vão achar que você é gay!',
+                    'deu-lhe um biscoito da sorte, tem escrito: "Eu te amo *-*"',
+                    'deu-lhe um Trakinas e um copo de refrigerante',
+                    'deu-lhe um biscoito de arco-íris feito com amor :heart:',
+                    'deu-lhe um biscoito que foi esquecido na chuva... eu não comeria.',
+                    'te trouxe biscoitos fresquinhos... parecem deliciosos! :3 '
+                ];
         bot.loadChat();
-
     }
-
-    //Change the bots default settings and make sure they are loaded on launch
-
+    
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        chatLink: "https://rawgit.com/" + fork + "/basicBot/master/lang/en.json",
+        botName: ":v: TurminhaBot :v:",
+        language: "portuguese",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
-        blacklistEnabled: true,
         lockdownEnabled: false,
-        lockGuard: false,
+        lockGuard: true,
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["tema", "A música não se encaixa nos padrões da sala. "],
+                ["op", "Essa música está na lista OP. "],
+                ["historico", "A música ainda está no histórico. "],
+                ["mix", "Você tocou um mix (muito longo) - não permitido. "],
+                ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
+                ["nsfw", "A música que você tocou é NSFW (impróprio). "],
+                ["indisponivel", "A música que você tocou está indisponível. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 3,
+        motd: "!roulette",
         filterChat: true,
-        etaRestriction: false,
+        etaRestriction: true,
         welcome: true,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "null",
         youtubeLink: null,
-        website: null,
+        website: "",
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
-        commandLiteral: "!",
-        blacklists: {
-            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleOPlist.json"
-        }
+        songstats: false,
+        commandLiteral: "!"
     }));
-
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
-
-}).call(this);
+    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://dl.dropboxusercontent.com/s/kxmk84c5hnaavkn/simsimicerto.js');
