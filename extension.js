@@ -1,6 +1,6 @@
 (function () {
     //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "DeathByHentai";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -55,7 +55,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "TonzuraBot",
         language: "english",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
@@ -65,20 +65,20 @@
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
-        blacklistEnabled: true,
+        blacklistEnabled: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
-        maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        maximumCycletime: 120,
+        voteSkip: true,
+        voteSkipLimit: 5,
         timeGuard: true,
-        maximumSongLength: 10,
-        autodisable: true,
-        commandCooldown: 30,
+        maximumSongLength: 8,
+        autodisable: false,
+        commandCooldown: 60,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
@@ -92,19 +92,19 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: true,
-        etaRestriction: false,
-        welcome: true,
+        motd: "Be cool, play vidya and party on dudes!",
+        filterChat: false,
+        etaRestriction: true,
+        welcome: false,
         opLink: null,
-        rulesLink: null,
+        rulesLink: http://goo.gl/EkbgX7,
         themeLink: null,
         fbLink: null,
-        youtubeLink: null,
+        youtubeLink: http://goo.gl/08xIMO,
         website: null,
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
@@ -113,6 +113,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/DeathByHentai/basicBot/master/basicBot.js", extend);
 
 }).call(this);
