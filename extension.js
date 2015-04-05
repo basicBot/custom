@@ -43,7 +43,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Recomendamos que use o OrigemWoot, veja um tutorial de como usa-lo. http://origemwoot.weebly.com/ :+1:");
+                    API.sendChat("/me Recomendamos que use o OrigemWoot, veja um tutorial de como usa-lo. http://origem-woot.com/ :+1:");
                 }
             }
         };
@@ -71,7 +71,10 @@
         botName: "Olá,bem vindo infeliz e volte sempre arrombado :point_right: :ok_hand:",
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
-        maximumAfk: 120,
+        startupCap: 4,
+        startupVolume: 50,
+        startupEmoji: true,
+        maximumAfk: 60,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -80,39 +83,45 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
+        voteSkip: true,
+        voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 7,
+        maximumSongLength: 8.30,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 1,
+        lockskipPosition: 3,
         lockskipReasons: [
-            ["tema", "A música não se encaixa nos padrões da sala. "],
+                ["tema", "A música não se encaixa nos padrões da sala. "],
                 ["op", "Essa música está na lista OP. "],
                 ["historico", "A música ainda está no histórico. "],
                 ["mix", "Você tocou um mix (muito longo) - não permitido. "],
                 ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
                 ["nsfw", "A música que você tocou é NSFW (impróprio). "],
                 ["indisponivel", "A música que você tocou está indisponível. "]
-        ],
+            ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 3,
+        motdEnabled: true,
+        motdInterval: 8,
         motd: "!roulette",
-        filterChat: false,
+        filterChat: true,
         etaRestriction: true,
-        welcome: false,
+        welcome: true,
         opLink: null,
         rulesLink: null,
-        themeLink: "http://i.imgur.com/u36VR4n.png",
+        themeLink: "http://i.imgur.com/u36VR4n.png,"
         fbLink: "null",
         youtubeLink: null,
-        website: "",
+        website: "null",
         intervalMessages: [],
         messageInterval: 5,
         songstats: false,
-        commandLiteral: "!"
+        commandLiteral: "!","/"
+        blacklists: {
+            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+        }
     }));
 
     //Start the bot and extend it when it has loaded.
