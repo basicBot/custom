@@ -68,15 +68,15 @@
 
     
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "EBbot",
+        botName: "Olá, Seja bem vindo infeliz e volte sempre arrombado :point_right: :ok_hand:",
         language: "portuguese",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/pt.json",
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 60,
-        bouncerPlus: false,
+        bouncerPlus: true,
         lockdownEnabled: false,
-        lockGuard: false,
+        lockGuard: true,
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
@@ -97,16 +97,16 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 3,
-        motd: "Mensagem temporária do dia",
-        filterChat: false,
+        motd: "!roulette",
+        filterChat: true,
         etaRestriction: true,
         welcome: false,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: "https://facebook.com/groups/1497216277163895/",
+        fbLink: "null",
         youtubeLink: null,
         website: "",
         intervalMessages: [],
@@ -117,7 +117,6 @@
 
     //Start the bot and extend it when it has loaded.
     $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
-    $.getScript('https://dl.dropboxusercontent.com/s/qggcze6yeq8l7hh/electro.js');
     $.getScript('https://dl.dropboxusercontent.com/s/kxmk84c5hnaavkn/simsimicerto.js');
 
 }).call(this);
