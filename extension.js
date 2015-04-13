@@ -102,7 +102,7 @@
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: http://forum.everestgamingegs.com/,
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
