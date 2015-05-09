@@ -55,10 +55,10 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: " >> BrotherHO00D BOT << ",
         language: "english",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
+        startupCap: 100, // 1-200
+        startupVolume: 100, // 0-100
         startupEmoji: false, // true or false
         cmdDeletion: true,
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
@@ -72,8 +72,8 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkip: true,
+        voteSkipLimit: 5,
         timeGuard: true,
         maximumSongLength: 10,
         autodisable: true,
