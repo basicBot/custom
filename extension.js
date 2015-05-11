@@ -46,6 +46,57 @@
                 }
             }
         };
+        
+        bot.commands.baconCommand = {
+            command: 'pass',  //The command to be called. With the standard command literal this would be: !pass
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me passes the blunt!!!");
+                }
+            }
+        };
+
+    bot.commands.baconCommand = {
+            command: 'transalert',  //The command to be called. With the standard command literal this would be: !transalert
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me might be a trans!");
+                }
+            }
+        };
+
+    bot.commands.baconCommand = {
+            command: 'good1pak',  //The command to be called. With the standard command literal this would be: !good1pak
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me: "gud 1 pak");
+                }
+            }
+        };
+    bot.commands.baconCommand = {
+            command: 'props',  //The command to be called. With the standard command literal this would be: !props
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me gives props to the DJ!");
+                }
+            }
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
