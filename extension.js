@@ -1,7 +1,7 @@
 (function () {
     
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "Bennyboy1695";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -56,13 +56,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "MyM-PlugBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        autowoot: true,
+        startupCap: 10, // 1-200
+        startupVolume: 3, // 0-100
+        startupEmoji: true, // true or false
+        autowoot: false,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
@@ -75,7 +75,7 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
+        voteSkip: true,
         voteSkipLimit: 10,
         historySkip: false,
         timeGuard: true,
@@ -86,7 +86,7 @@
         skipPosition: 3,
         skipReasons: [
             ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
+            ["op", "This song is Overplayed! "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
@@ -106,7 +106,7 @@
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: "hhtps://mineyourmind.net",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
