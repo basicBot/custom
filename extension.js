@@ -48,6 +48,31 @@
             }
         };
 
+		bot.commands.baconCommand = {
+            command: 'scotch',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+				
+                else {
+					var msg = chat.message;
+                    if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
+                    var name = msg.substr(cmd.length + 2);
+                    var user = basicBot.userUtilities.lookupUserName(name);
+                    if (msg.length > cmd.length + 2) {
+                        if (typeof user !== 'undefined') {
+                            if (basicBot.room.roomevent) {
+                                basicBot.room.eventArtists.push(user.id);
+                            }
+                            API.sendChat("/me gives " + user.id + " a Glennfiddich 12 year, neat, of course");
+                        } else API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
+					}
+                }
+            }
+        };
+		
         //Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -56,7 +81,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "SwingBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
@@ -66,7 +91,7 @@
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         blacklistEnabled: true,
@@ -97,8 +122,8 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: true,
+        motd: "Boomswing...it's a thing!",
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
