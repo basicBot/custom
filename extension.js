@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "CoolBreese";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "KillionBot2.0",
       language: "english",
       chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
@@ -59,24 +59,24 @@
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
-      bouncerPlus: true,
-      blacklistEnabled: true,
+      bouncerPlus: false,
+      blacklistEnabled: false,
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
       cycleGuard: true,
-      maximumCycletime: 10,
+      maximumCycletime: 8,
       voteSkip: false,
       voteSkipLimit: 10,
       historySkip: false,
-      timeGuard: true,
+      timeGuard: false,
       maximumSongLength: 10,
-      autodisable: true,
+      autodisable: false,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 5,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -88,22 +88,22 @@
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
-      motdEnabled: false,
+      motdEnabled: true,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Be sure to invite your friends with: bit.ly/KDC-plugdj",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: null,
+      rulesLink: http://killion.co/index.php?threads/killion-plug-dj.1032/,
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
-      website: null,
+      website: killion.co,
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
-      commandLiteral: "!",
+      commandLiteral: "/",
       blacklists: {
         NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/OPlist.json",
