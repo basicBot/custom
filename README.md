@@ -1,19 +1,17 @@
-basicBot-customization
-======================
-
-A not so basic bot for plug.dj
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Yemasthui/basicBot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![facebook group](http://i.benzi.io/97dW.svg)](https://facebook.com/groups/basicBot) [![twitter](http://i.benzi.io/4KEn.svg)](https://twitter.com/bscBt)
-
-Stay updated on **basicBot**'s development by following the project on Twitter [@bscBt](http://twitter.com/bscBt)
-
-Created by [Yemasthui](https://github.com/Yemasthui) but now maintained by [Benzi](https://github.com/Benzi).
-
-(You can email me via [bnz.mngn@gmail.com](mailto:bnz.mngn@gmail.com) or send me a message on [Gitter](https://gitter.im/Benzi) if you have any queries about the bot)
+# basicBot (custom)
+> A not so basic bot for plug.dj
 
 ---
 
-Click [here](https://github.com/Yemasthui/basicBot) for basicBot's main repository.
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Yemasthui/basicBot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![facebook group](https://ssl.benzi.io/dump/facebook-group-badge.svg)](https://facebook.com/groups/basicBot) [![twitter](https://ssl.benzi.io/dump/twitter-badge.svg)](https://twitter.com/bscbt)
+
+Email enquiries: [bnz.mngn [at] gmail [dot] com](mailto:bnz.mngn@gmail.com)
+
+---
+
+[Click here](https://github.com/Yemasthui/basicBot) for basicBot's main repository.
+
+---
 
 Using custom room settings or adding functionality is done by loading your own script loading and modifying the bot.
 This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/Yemasthui/basicBot-customization/blob/master/extension.js).
@@ -41,4 +39,4 @@ bot.logNewBlacklistedSongs(); //get a list
 
 Copyright
 ---------
-Copyright &copy; 2014 Yemasthui
+Copyright &copy; 2014-2015 Yemasthui
