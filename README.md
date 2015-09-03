@@ -39,4 +39,4 @@ bot.logNewBlacklistedSongs(); //get a list
 
 Copyright
 ---------
-Copyright &copy; 2014-2015 basicTeam
+Copyright &copy; 2014-2015 bscBot
