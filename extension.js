@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "bscBot";
+    var fork = "OtakuTheBot";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -58,7 +58,7 @@
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk:   15,
       afkRemoval: true,
       maximumDc: 60,
       bouncerPlus: true,
@@ -68,40 +68,40 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
+      voteSkip: true,
+      voteSkipLimit: 5,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 8,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
-      ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
-      ["mix", "You played a mix, which is against the rules. "],
-      ["sound", "The song you played had bad sound quality or no sound. "],
+      ["theme", "Esta canção não se encaixa no tema do quarto. "],
+      ["op"Muito,op (n sei o que dizer sobre isso) ". "],
+      ["history", "Essa musica esta no historico. "],
+      ["mix", "Você jogou uma musica, que é contra as regras. "],
+      ["sound", "A canção que você jogou teve má qualidade do som ou nenhum som. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
+      ["unavailable", "A canção que você jogou não estava disponível para alguns usuários. "]
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Mensagem temporária do Dia",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: null,
-      themeLink: null,
-      fbLink: null,
-      youtubeLink: null,
-      website: null,
+      rulesLink: true,
+      themeLink: true,
+      fbLink: true,
+      youtubeLink: true,
+      website:true,
       intervalMessages: [],
-      messageInterval: 5,
+      messageInterval: 10,
       songstats: true,
       commandLiteral: "!",
       blacklists: {
