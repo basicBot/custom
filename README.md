@@ -16,4 +16,4 @@ Email enquiries: [bnz.mngn [at] gmail [dot] com](mailto:bnz.mngn@gmail.com)
 
 Copyright
 ---------
-Copyright &copy; 2014-2015 bscBot
+Copyright &copy; 2014-2015 basicBot
