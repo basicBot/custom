@@ -3,7 +3,7 @@
 
 ---
 
-[![Slack](https://basicbot.herokuapp.com/badge.svg)](https://basicbot.herokuapp.com/) [![facebook group](https://ssl.benzi.io/dump/facebook-group-badge.svg)](https://facebook.com/groups/basicBot) [![twitter](https://ssl.benzi.io/dump/twitter-badge.svg)](https://twitter.com/bscbt)
+[![Slack](https://basicbot.herokuapp.com/badge.svg)](https://basicbot.herokuapp.com/) [![facebook group](https://rawgit.com/basicBot/source/master/assets/facebook-group-badge.svg)](https://facebook.com/groups/basicBot) [![twitter](https://rawgit.com/basicBot/source/master/assets/twitter-badge.svg)](https://twitter.com/bscbt)
 
 #Important - Deprecation Notice
 
