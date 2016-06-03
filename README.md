@@ -5,13 +5,36 @@
 
 [![Slack](https://basicbot.herokuapp.com/badge.svg)](https://basicbot.herokuapp.com/) [![facebook group](https://img.shields.io/badge/facebook-group-3b5998.svg?style=flat)](https://facebook.com/groups/basicBot) [![twitter](https://img.shields.io/twitter/follow/bscbt.svg?style=social)](https://twitter.com/bscbt)
 
-#Important - Deprecation Notice
+Email enquiries: [bnz.mngn [at] gmail [dot] com](mailto:bnz.mngn@gmail.com)
 
-Plug DJ Inc has ceased operations as of the 29th of September, 2015. Basic Bot therefore no longer has any use, as the site is offline. Thanks for everybody that was involved.
+---
 
-__Note: Plug.dj has been acquired, and the staging domain is available as work is done to bring the site back to normality and stability. The bot has been edited for a single time only to work with the staging domain. As soon as the public domain comes available again, the domain will be changed and basic bot will not work with staging.__
+[Click here](https://github.com/bscBot/source) for basicBot's main repository.
 
-Email enquiries: [hi@benzi.io](mailto:hi@benzi.io)
+---
+
+Using custom room settings or adding functionality is done by loading your own script loading and modifying the bot.
+This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/bscBot/custom/blob/master/extension.js).
+When you have forked the repo, bookmark the following script, __but change _bscBot_ to your own github handle__.
+
+`javascript:(function(){$.getScript('https://rawgit.com/bscBot/custom/master/extension.js');})();`
+
+If you are using your own hosting service for your script, swap the link with your own.
+
+A detailed overview of the possible settings can be found [here](https://github.com/bscBot/custom/blob/master/settingsOverview.md).
+
+(A custom .json file can still be used for custom file settings, but is discouraged as the method provided here allows for more customization.)
+
+###Blacklists###
+
+Blacklists can be added in the settings through either links to raw json files with the same format as those in the examples provided (forking and using [rawgit's development link](https://rawgit.com/) is a great way to do this),
+or replacing the link with a custom function that loads your lists into the bot (this option requires extensive knowledge of javascript and a good understanding of the bot's inner workings).
+
+To update your lists manually, you can use the details specified in chat messages after a song is blacklisted, or use either of these in the console periodically:
+```javascript
+bot.getNewBlacklistedSongs(); //get a javascript object
+bot.logNewBlacklistedSongs(); //get a list
+```
 
 
 Copyright
