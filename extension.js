@@ -52,8 +52,8 @@
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupVolume: 50, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
@@ -91,15 +91,15 @@
       motdEnabled: false,
       motdInterval: 5,
       motd: "Temporary Message of the Day",
-      filterChat: true,
+      filterChat: false,
       etaRestriction: false,
       welcome: true,
       opLink: null,
       rulesLink: null,
       themeLink: null,
-      fbLink: null,
+      fbLink: https://www.facebook.com/turkanime/ ,
       youtubeLink: null,
-      website: null,
+      website: http://www.turkanime.tv/,
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
