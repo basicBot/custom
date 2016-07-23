@@ -46,14 +46,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "AlphaBorne bot",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 200, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
@@ -88,21 +88,21 @@
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
-      motdEnabled: false,
-      motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motdEnabled: true,
+      motdInterval: 60,
+      motd: "Check us out at http://alphaborne.net",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
       opLink: null,
       rulesLink: null,
       themeLink: null,
-      fbLink: null,
+      fbLink: http://facebook.com/alphaborne,
       youtubeLink: null,
-      website: null,
+      website: http://alphaborne.net,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
