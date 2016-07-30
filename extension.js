@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "DJCJO";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,20 +46,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "God",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupCap: 10, // 1-200
+      startupVolume: 50, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
-      afkRemoval: true,
+      maximumAfk: 1200,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -67,14 +67,14 @@
       lockGuard: false,
       maximumLocktime: 10,
       cycleGuard: true,
-      maximumCycletime: 10,
+      maximumCycletime: 1000,
       voteSkip: false,
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 7,
       autodisable: true,
-      commandCooldown: 30,
+      commandCooldown: 5,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Welcome to the CJO community!",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
