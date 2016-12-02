@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "Indigentragnarok";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -25,15 +25,15 @@
         }
 
         // Example code for a bot command:
-        bot.commands.baconCommand = {
-          command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+        bot.commands.cuntCommand = {
+          command: 'cunt',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Bacon!!!");
+              API.sendChat("/me Cunt!!!");
             }
           }
         };
@@ -51,9 +51,9 @@
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupCap: 38, // 1-200
+      startupVolume: 15, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
