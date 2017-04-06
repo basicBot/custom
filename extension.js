@@ -49,7 +49,7 @@
       botName: "TurtleTower Bot",
       language: "english",
       chatLink: "https://rawgit.com/Trigstur/basicBot/master/lang/en.json",
-      scriptLink: "https://rawgit.com/Trigstur/basicBot/source/master/basicBot.js",
+      scriptLink: "https://rawgit.com/Trigstur/basicBot/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
