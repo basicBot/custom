@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        var spamWords = ['fuck', 'Kappa', 'cancer', 'spam4'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -46,19 +46,19 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "TurtleTower Bot",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/Trigstur/basicBot/master/lang/en.json",
+      scriptLink: "https://rawgit.com/Trigstur/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 60,
       afkRemoval: true,
       maximumDc: 60,
       bouncerPlus: true,
@@ -70,7 +70,7 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: false,
@@ -79,7 +79,7 @@
       skipPosition: 3,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
-      ["op", "This song is on the OP list. "],
+      ["op", "This song is Overplayed Ughh. "],
       ["history", "This song is in the history. "],
       ["mix", "You played a mix, which is against the rules. "],
       ["sound", "The song you played had bad sound quality or no sound. "],
@@ -100,7 +100,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: [],
+      intervalMessages: ["Check our website"],
       messageInterval: 5,
       songstats: true,
       commandLiteral: "!",
