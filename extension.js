@@ -107,7 +107,7 @@
       blacklists: {
         NSFW: "https://rawgit.com/Trigstur/basicBot-customization/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/Trigstur/basicBot-customization/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/Trigstur/basicBot-customization/master/blacklists/BANNEDlist.json.
+        BANNED: "https://rawgit.com/Trigstur/basicBot-customization/master/blacklists/BANNEDlist.json"
       }
     }));
 
