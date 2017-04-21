@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "netexik01";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: ":<3: Žilinka :<3:",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
@@ -54,7 +54,7 @@
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
-      autowoot: true,
+      autowoot: false,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
@@ -70,17 +70,17 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: false,
-      commandCooldown: 30,
+      commandCooldown: 0,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
-      ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
+      ["theme", "Promiň  @%%NAME%%, ale tento song nelze přehrát :( "],
+      ["op", " @%%NAME%%, nemáš práva na tento song :( "],
+      ["history", " Promiň  @%%NAME%%, ale tento song je v DJ Historii :( "],
       ["mix", "You played a mix, which is against the rules. "],
       ["sound", "The song you played had bad sound quality or no sound. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
@@ -103,7 +103,7 @@
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
-      commandLiteral: "!",
+      commandLiteral: ".",
       blacklists: {
         NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
