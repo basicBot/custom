@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "wingnaut";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: 'basicBot',
+        botName: 'drunkbot',
         language: 'english',
         chatLink: 'https://rawgit.com/basicBot/source/master/lang/en.json',
         scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
@@ -73,13 +73,13 @@
         historySkip: false,
         timeGuard: true,
         strictTimeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 15,
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
         thorCommand: false,
         thorCooldown: 10,
-        skipPosition: 3,
+        skipPosition: 1,
         skipReasons: [
             ['theme', 'This song does not fit the room theme. '],
             ['op', 'This song is on the OP list. '],
